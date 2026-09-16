@@ -1,35 +1,37 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Dansk Alfabet</title>
+    <title>Det Danske Alfabet</title>
 
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <audio id="audio">
-  </audio>
-
-  <div id='wrap'>
-    <input type='text' id='letter' autofocus></input>
-  </div>
-
-  <ul id='people'>
-    <li><img class='person' id='else' src='images/else.png' title='Else'></li>
-    <li><img class='person' id='anne-katrine' src='images/anne-katrine.png' title='Anne Katrine'></li>
-    <li><img class='person' id='jonas' src='images/jonas.png' title='Jonas'></li>
-  </ul>
-
-  <footer>
-    <a href="lytter.html">Lyt til bogstaverne</a>
-    &middot;
-    <a href="https://github.com/rvedotrc/det-danske-alfabet">GitHub</a>
-  </footer>
-
-  <script src="js/script.js"></script>
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <audio></audio>
+    <main>
+      <div class="space0"></div>
+      <div class="letters"><input id="text" type="text" value="" /></div>
+      <div class="space1"></div>
+      <div class="voices">
+        <div class="avatar" data-voice="else">
+          <img src="images/else.svg" />
+        </div>
+        <div class="avatar" data-voice="anne-katrine">
+          <img src="images/anne-katrine.svg" />
+        </div>
+        <div class="avatar" data-voice="jonas">
+          <img src="images/jonas.svg" />
+        </div>
+      </div>
+      <div class="space3"></div>
+    </main>
+    <footer>
+      <a href="lytter.html">Lyt til bogstaverne</a> &nbsp; &middot; &nbsp;
+      <a href="https://github.com/rvedotrc/det-danske-alfabet">GitHub</a>
+    </footer>
+    <script src="js/afspil.js"></script>
+  </body>
 </html>
